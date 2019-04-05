@@ -5,11 +5,11 @@ jobs:
     - stage: "Test"
       name: "Test Python 3.6"
       python: "3.6"
-      script: pytest
+      script: pytest --cov=pytemplate tests/
     - stage: "Test"
       name: "Test Python 3.7"
       python: "3.7"
-      script: pytest
+      script: pytest --cov=pytemplate tests/
     - stage: "Code Quality"
       name: "Flake8"
       python: "3.7"
